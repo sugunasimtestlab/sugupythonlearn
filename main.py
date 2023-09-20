@@ -1,10 +1,9 @@
-x = "awesome"
+a = 200
+b = 33
 
-def myfunc():
-  global x
-  x = "fantastic"
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
 
-myfunc()
-
-print("Python  is " + x)
 
