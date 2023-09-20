@@ -1,10 +1,9 @@
-x = "awesome"
+x = 20.5
 
-def myfunc():
-  global x
-  x = "fantastic"
+#display x:
+print(x)
 
-myfunc()
+#display the data type of x:
+print(type(x)) 
 
-print("Python is " + x)
 
