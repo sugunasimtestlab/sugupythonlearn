@@ -1,8 +1,19 @@
-a = "Hello"
-print(a)
-b ="suguna"
-print(b)
-c = "Hello, World!"
-print(c[1])
-d = "Hello, World!"
-print(d[0])
+
+for x in "banana":
+  print(x) 
+
+
+a = "Hello, World!"
+print(len(a))
+
+
+x = "The best things in life are free!"
+print("free" in x)
+
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+
+  
+
+
