@@ -1,5 +1,5 @@
 a = 200
-b = 33
+b = 1000
 
 if b > a:
   print("b is greater than a")
