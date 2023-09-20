@@ -1,19 +1,23 @@
+b = "Hello, World!"
+print(b[2:5])
 
-for x in "banana":
-  print(x) 
+b = "Hello, World!"
+print(b[2:9])
+
+b = "Hello, World!"
+print(b[0:13])
+
+b = "Hello, World!"
+print(b[-5:-2])
+
+b = "Hello, World!"
+print(b[-13:-1])
 
 
-a = "Hello, World!"
-print(len(a))
 
 
-x = "The best things in life are free!"
-print("free" in x)
 
-txt = "The best things in life are free!"
-if "free" in txt:
-  print("Yes, 'free' is present.")
 
-  
+
 
 
