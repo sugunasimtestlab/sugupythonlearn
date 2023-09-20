@@ -1,6 +1,8 @@
-x = float(1)
-y = float(2.8)
-z = float("3")
-print(x)
-print(y)
-print(z)
+a = "Hello"
+print(a)
+b ="suguna"
+print(b)
+c = "Hello, World!"
+print(c[1])
+d = "Hello, World!"
+print(d[0])
