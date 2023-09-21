@@ -1,22 +1,19 @@
-def myFunction() :
-  return True
-
-if myFunction():
-  print("YES!")
-else:
-  print("NO!")
+print(10 + 5)
+a = 10
+b = 5
+print(a + b)
 
 
-print(bool(False))
-print(bool(None))
-print(bool(0))
-print(bool(""))
-print(bool(()))
-print(bool([]))
-print(bool({}))
+x = ["apple", "banana"]
 
-print(bool("birds"))
-print(bool("flower"))
-print(bool("schools"))
+print("banana" in x)
 
+# returns True because a sequence with the value "banana" is in the list
+
+x = ["apple", "banana" ]
+
+print("orange" not in x)
+# returns True because a sequence with the value "banana" is in the list
+print((6 + 3) - (6 + 3))
+print((20+10) - (10+20))
 
