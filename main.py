@@ -1,19 +1,20 @@
-print(10 + 5)
-a = 10
-b = 5
-print(a + b)
+
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+print(list1)
+print(list2)
+print(list3)
+
+x = list(("apple", "banana", "cherry"))
+print(x)
 
 
-x = ["apple", "banana"]
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
 
-print("banana" in x)
-
-# returns True because a sequence with the value "banana" is in the list
-
-x = ["apple", "banana" ]
-
-print("orange" not in x)
-# returns True because a sequence with the value "banana" is in the list
-print((6 + 3) - (6 + 3))
-print((20+10) - (10+20))
 
