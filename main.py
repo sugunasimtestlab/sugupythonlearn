@@ -1,36 +1,20 @@
 
-thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort()
-print(thislist)
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
 
-thislist = ["apple", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort()
-print(thislist)
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
 
-thislist = [100 ,20 ,30, 50, 10, 60 ]
-thislist.sort()
-print(thislist)
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
 
-thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort(reverse = True)
-print(thislist)
-
-def myfunc(n):
-  return abs(n - 50)
-thislist = [100, 50, 65, 82, 23]
-thislist.sort(key = myfunc)
-print(thislist)
-
-thislist = ["banana", "Orange", "Kiwi", "cherry"]
-thislist.reverse()
-print(thislist) 
-
-
-
-
-
-
-
-
+list1 =["suguna"]
+list2 =["sundarajothi"]
+list3 = list1+ list2
+print(list3)
 
 
