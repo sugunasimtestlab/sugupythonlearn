@@ -1,18 +1,51 @@
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
 thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
 print(thistuple)
 
-thistuple = ("apple",)
-print(type(thistuple))
-thistuple = ("apple")
-print(type(thistuple))
+thistuple = ("apple", "banana", "kiwi")
+y = ("orange",)
+thistuple += y
+print(thistuple)
 
-tuple1 = ("apple" "banana" "cherry")
-tuple2 = (10, 5, 7, 9, 3)
-tuple3 = (True, False, False)
-print(tuple1)
-print(tuple2)
+
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+print(thistuple)
+
+
+thistuple = ("tamil", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+thistuple = ("math", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+  thistuple = ("one", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
+
+a=int(input())
+b=int(input())
+c=int(input())
+a=b+c 
+d=a*b*c 
+c=a/b 
+print(d)
+
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+tuple3 = tuple1 + tuple2
 print(tuple3)
-print(type(tuple1))
-print(type(tuple2))
-
-
