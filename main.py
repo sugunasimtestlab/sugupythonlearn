@@ -1,39 +1,35 @@
-thislist = ["apple", "banana", "cherry"]
-thislist.remove("banana")
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
 print(thislist)
 
-thislist = ["apple", "banana", "cherry"]
-thislist.pop(1)
+thislist = ["apple", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
 print(thislist)
 
-thislist = ["apple", "banana", "cherry"]
-for x in thislist:
-  print(x)
+thislist = [100 ,20 ,30, 50, 10, 60 ]
+thislist.sort()
+print(thislist)
 
-thislist = ["apple", "banana", "cherry"]
-for i in range(len(thislist)):
-  print(thislist[i])
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
 
+def myfunc(n):
+  return abs(n - 50)
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
 
-  thislist = ["apple", "banana", "cherry"]
-i = 0
-while i < len(thislist):
-  print(thislist[i])
-  i = i + 1
-
-fruits = ["suguna", "shalini", "suganya", "vivin", "athwin"]
-newlist = []
-for x in fruits:
-  if "a" in x:
-    newlist.append(x)
-print(newlist)
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist) 
 
 
-newlist = [x for x in range(10)]
-print(newlist)
 
-newlist = [x for x in range(10) if x < 5]
-print(newlist)
+
+
+
 
 
 
