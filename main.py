@@ -1,44 +1,33 @@
+a = 33
+b = 200
 
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-mydict = thisdict.copy()
-print(mydict)
-
-myfamily = {
-  "child1" : {
-    "name" : "Emil",
-    "year" : 2004
-  },
-  "child2" : {
-    "name" : "Tobias",
-    "year" : 2007
-  },
-  "child3" : {
-    "name" : "Linus",
-    "year" : 2011
-  }
-}
-print(myfamily)
+if b > a:
+  print("b is greater than a")
 
 
-child1 = {
-  "name" : "Emil",
-  "year" : 2004
-}
-child2 = {
-  "name" : "Tobias",
-  "year" : 2007
-}
-child3 = {
-  "name" : "Linus",
-  "year" : 2011
-}
-myfamily = {
-  "child1" : child1,
-  "child2" : child2,
-  "child3" : child3,}
-print(myfamily)
+  a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+
+
+
+  a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+  a = 2
+b = 330
+print("A") if a > b else print("B")
+
+
+
+
 
