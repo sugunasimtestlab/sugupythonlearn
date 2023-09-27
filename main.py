@@ -1,23 +1,27 @@
-cars = ["Ford", "Volvo", "BMW"]
-print(cars)
+class MyClass:
+  x = 3
+print(MyClass)
 
-cars = ["Ford", "Volvo", "BMW"]
-x = cars[0]
-print(x)
+class MyClass:
+  x = 5
+p1 = MyClass()
+print(p1.x)
 
-cars = ["Ford", "Volvo", "BMW"]
-for x in cars:
-  print(x)
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+p1 = Person("John", 36)
+print(p1.name)
+print(p1.age)
 
-  cars = ["Ford", "Volvo", "BMW"]
-cars.append("Honda")
-print(cars)
+class Person:
+  def __init__(mysillyobject, name, age):
+    mysillyobject.name = name
+    mysillyobject.age = age
+def myfunc(abc):
+    print("Hello my name is " + abc.name)
+p1 = Person("John", 36)
+p1.myfunc()
 
-cars = ["Ford", "Volvo", "BMW"]
-cars.pop(1)
-print(cars)
 
-
-cars = ["Ford", "Volvo", "BMW"]
-cars.remove("Volvo")
-print(cars)
