@@ -1,34 +1,22 @@
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
 
-  def printname(self):
-    print(self.firstname, self.lastname)
-#Use the Person class to create an object, and then execute the printname method:
-x = Person("John", "Doe")
-x.printname()
+print(next(myit))
+print(next(myit))
+print(next(myit))
 
 
-class Student(Person):
-  pass
+mystr = "banana"
+myit = iter(mystr)
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
 
-x = Student("Mike", "Olsen")
-x.printname()
 
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
-
-  def printname(self):
-    print(self.firstname, self.lastname)
-
-class Student(Person):
-  def __init__(self, fname, lname):
-    Person.__init__(self, fname, lname)
-
-x = Student("Mike", "Olsen")
-x.printname()
-
+mytuple = ("apple", "banana", "cherry")
+for x in mytuple:
+  print(x)
 
