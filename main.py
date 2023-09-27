@@ -1,19 +1,23 @@
-x = lambda a : a + 10
-print(x(5))
+cars = ["Ford", "Volvo", "BMW"]
+print(cars)
+
+cars = ["Ford", "Volvo", "BMW"]
+x = cars[0]
+print(x)
+
+cars = ["Ford", "Volvo", "BMW"]
+for x in cars:
+  print(x)
+
+  cars = ["Ford", "Volvo", "BMW"]
+cars.append("Honda")
+print(cars)
+
+cars = ["Ford", "Volvo", "BMW"]
+cars.pop(1)
+print(cars)
 
 
-def myfunc(n):
-  return lambda a : a * n
-
-mydoubler = myfunc(2)
-
-print(mydoubler(11))
-
-def myfunc(n):
-  return lambda a : a * n
-
-mydoubler = myfunc(2)
-mytripler = myfunc(3)
-
-print(mydoubler(11))
-print(mytripler(11))
+cars = ["Ford", "Volvo", "BMW"]
+cars.remove("Volvo")
+print(cars)
