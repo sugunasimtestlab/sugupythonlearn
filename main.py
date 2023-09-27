@@ -1,22 +1,18 @@
-mytuple = ("apple", "banana", "cherry")
-myit = iter(mytuple)
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
 
-print(next(myit))
-print(next(myit))
-print(next(myit))
+  def __next__(self):
+    if self.a <= 20:
+      x = self.a
+      self.a += 1
+      return x
+    else:
+      raise StopIteration
 
+myclass = MyNumbers()
+myiter = iter(myclass)
 
-mystr = "banana"
-myit = iter(mystr)
-print(next(myit))
-print(next(myit))
-print(next(myit))
-print(next(myit))
-print(next(myit))
-print(next(myit))
-
-
-mytuple = ("apple", "banana", "cherry")
-for x in mytuple:
+for x in myiter:
   print(x)
-
