@@ -1,18 +1,36 @@
-class MyNumbers:
-  def __iter__(self):
-    self.a = 1
-    return self
+x = "Hello World!"
+print(len(x))
 
-  def __next__(self):
-    if self.a <= 20:
-      x = self.a
-      self.a += 1
-      return x
-    else:
-      raise StopIteration
+mytuple = ("apple", "banana", "cherry")
+print(len(mytuple))
 
-myclass = MyNumbers()
-myiter = iter(myclass)
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-for x in myiter:
-  print(x)
+  def move(self):
+    print("Drive!")
+
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Sail!")
+
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car class
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
+plane1 = Plane("Boeing", "747")     #Create a Plane class
+
+for x in (car1, boat1, plane1):
+  x.move()
