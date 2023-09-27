@@ -1,27 +1,34 @@
-class MyClass:
-  x = 3
-print(MyClass)
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-class MyClass:
-  x = 5
-p1 = MyClass()
-print(p1.x)
+  def printname(self):
+    print(self.firstname, self.lastname)
+#Use the Person class to create an object, and then execute the printname method:
+x = Person("John", "Doe")
+x.printname()
+
+
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
 
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-p1 = Person("John", 36)
-print(p1.name)
-print(p1.age)
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-class Person:
-  def __init__(mysillyobject, name, age):
-    mysillyobject.name = name
-    mysillyobject.age = age
-def myfunc(abc):
-    print("Hello my name is " + abc.name)
-p1 = Person("John", 36)
-p1.myfunc()
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+
+x = Student("Mike", "Olsen")
+x.printname()
 
 
