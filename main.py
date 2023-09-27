@@ -1,23 +1,23 @@
-i = 1
-while i < 6:
-  print(i)
-  i += 1
+def my_function(fname):
+  print(fname + " Refsnes")
 
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
 
-fruits = ["apple", "banana", "cherry"]
-for x in fruits:
-  if x == "banana":
-    break
-  print(x) 
+def my_function(fname, lname):
+  print(fname + " " + lname)
 
-  
-fruits = ["apple", "banana", "cherry"]
-for x in fruits:
-  if x == "banana":
-    continue
-  print(x)
-for x in range(2, 6):
-  print(x)
+my_function("Emil", "Refsnes")
 
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
 
-  
+my_function("Emil", "Tobias", "Linus")
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
