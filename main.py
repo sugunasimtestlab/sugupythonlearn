@@ -7,4 +7,4 @@ else:
   print("b is not greater than a")
 
 for x in range(10):
-  print('Athuvin')
+  print('Suguna')
