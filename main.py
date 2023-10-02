@@ -1,36 +1,15 @@
-x = "Hello World!"
-print(len(x))
+input_file_name = "ChassisCAN1.dbc"
+output_file_name= "CANoutput"
 
-mytuple = ("apple", "banana", "cherry")
-print(len(mytuple))
-
-class Car:
-  def __init__(self, brand, model):
-    self.brand = brand
-    self.model = model
-
-  def move(self):
-    print("Drive!")
-
-class Boat:
-  def __init__(self, brand, model):
-    self.brand = brand
-    self.model = model
-
-  def move(self):
-    print("Sail!")
-
-class Plane:
-  def __init__(self, brand, model):
-    self.brand = brand
-    self.model = model
-
-  def move(self):
-    print("Fly!")
-
-car1 = Car("Ford", "Mustang")       #Create a Car class
-boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
-plane1 = Plane("Boeing", "747")     #Create a Plane class
-
-for x in (car1, boat1, plane1):
-  x.move()
+# Read the input text file and filter lines containing "BO_"
+lines_with_BO = []
+with open(input_file_name, 'r') as input_file:
+    for line in input_file:
+        if line.startswith('BO_'):
+            words = line.split()
+            lineToAdd = [words[1]," " ,words[2], "\n"]
+            lines_with_BO.append(''.join(lineToAdd))
+# Write the filtered lines to another text file
+with open(output_file_name, 'w') as output_file:
+    for line in lines_with_BO:
+        output_file.write(line)
