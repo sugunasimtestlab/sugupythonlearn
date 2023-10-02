@@ -1,5 +1,7 @@
-# Python Starter
+a = 200
+b = 33
 
-Quickly get started with [Python](https://www.python.org/) using this starter! 
-
-- If you want to upgrade Python, you can change the image in the [Dockerfile](./.codesandbox/Dockerfile).
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")

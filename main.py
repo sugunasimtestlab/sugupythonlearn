@@ -1,22 +1,36 @@
-x = 1    # int
-y = 2.8  # float
-z = 1j   # complex
+x = "Hello World!"
+print(len(x))
 
-#convert from int to float:
-a = float(x)
+mytuple = ("apple", "banana", "cherry")
+print(len(mytuple))
 
-#convert from float to int:
-b = int(y)
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-#convert from int to complex:
-c = complex(x)
+  def move(self):
+    print("Drive!")
 
-print(a)
-print(b)
-print(c)
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-print(type(a))
-print(type(b))
-print(type(c))
+  def move(self):
+    print("Sail!")
 
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car class
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
+plane1 = Plane("Boeing", "747")     #Create a Plane class
+
+for x in (car1, boat1, plane1):
+  x.move()
