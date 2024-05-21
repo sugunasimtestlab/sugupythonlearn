@@ -1,22 +1,15 @@
-x = 1    # int
-y = 2.8  # float
-z = 1j   # complex
+input_file_name = "ChassisCAN1.dbc"
+output_file_name= "CANoutput"
 
-#convert from int to float:
-a = float(x)
-
-#convert from float to int:
-b = int(y)
-
-#convert from int to complex:
-c = complex(x)
-
-print(a)
-print(b)
-print(c)
-
-print(type(a))
-print(type(b))
-print(type(c))
-
-
+# Read the input text file and filter lines containing "BO_"
+lines_with_BO = []
+with open(input_file_name, 'r') as input_file:
+    for line in input_file:
+        if line.startswith('BO_'):
+            words = line.split()
+            lineToAdd = [words[1]," " ,words[2], "\n"]
+            lines_with_BO.append(''.join(lineToAdd))
+# Write the filtered lines to another text file
+with open(output_file_name, 'w') as output_file:
+    for line in lines_with_BO:
+        output_file.write(line)
