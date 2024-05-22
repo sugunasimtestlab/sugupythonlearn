@@ -1,0 +1,15 @@
+def destination(month):
+    if month < 1 or month > 12:
+        print("Enter valid number")
+    elif 2 <= month <= 5:
+        print("Shimla, Manali, Ooty")
+    elif 6 <= month <= 9:
+        print("Lonavala, Goa, Kodaikanal")
+    elif month == 10 or month <= 12 or month == 1:
+        print("Munnar, Kullu, Manali")
+    else:
+        print("Enter valid number")
+
+#input
+month = int(input("Enter the month number: "))
+destination(month)
